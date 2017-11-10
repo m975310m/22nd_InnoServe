@@ -4,14 +4,11 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Toast;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -19,7 +16,6 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.journeyapps.barcodescanner.camera.CameraInstance;
 import com.sea.icoco.Control.DataControler;
 
 import org.json.JSONException;
@@ -29,6 +25,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     public static GoogleMap mMap;
     DataControler dataControler = MainActivity.dataControler;
+    //2017/11/10上傳
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
