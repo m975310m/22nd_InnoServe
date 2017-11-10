@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_receive"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sea.icoco.GoPointActivity">
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:cpb_background_progressbar_color="#C1FB9B"
+        app:cpb_background_progressbar_width="10dp"
+        app:cpb_progressbar_color="#91DC5A"
+        app:cpb_progressbar_width="20dp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:text="累積點數 : "
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:id="@+id/point_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView27"
+        android:layout_toEndOf="@+id/textView27"
+        android:layout_toRightOf="@+id/textView27"
+        android:textColor="#FF0088"
+        android:text="37 點"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bonus_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp"
+        android:text="將獲得點數 1 點"
+        android:textColor="#91DC5A"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/setp_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bonus_txv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="累積步數 0 / 10 步"
+        android:textColor="#91DC5A" />
+
+</RelativeLayout>

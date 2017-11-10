@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:layout_height="fill_parent">
+    <!--android:background="@drawable/list_selector"-->
+
+
+    <!--  ListView最左邊的縮略圖 -->
+
+    <!-- 歌曲名-->
+
+    <!-- 歌手名 -->
+
+    <!-- 歌曲播放時間 -->
+    <TextView
+        android:id="@+id/name_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="南港商店"
+        android:textColor="#040404" android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/relativeLayout25"/>
+
+
+    <TextView
+        android:id="@+id/TranDate_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:text="時間"
+        android:textColor="#10bcc9"
+        android:textSize="10dip"
+        android:textStyle="bold"/>
+
+    <!-- 進入播放 -->
+
+    <TextView
+        android:id="@+id/money_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="金額"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/couponContent_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="測試"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/name_txv"
+        android:layout_toRightOf="@+id/relativeLayout25"
+        android:layout_toEndOf="@+id/relativeLayout25"/>
+
+    <TextView
+        android:id="@+id/address_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="台灣臺北市南港區經貿二路186號" android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/relativeLayout25"
+        android:layout_toRightOf="@+id/relativeLayout25"
+        android:layout_toEndOf="@+id/relativeLayout25"/>
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/couponContent_txv"
+        android:layout_alignRight="@+id/TranDate_txv"
+        android:layout_alignEnd="@+id/TranDate_txv">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/news"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/news_img"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout25"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout android:id="@+id/thumbnail"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="3dip"
+                      android:weightSum="1"
+                      android:layout_alignParentTop="true"
+                      android:layout_alignParentLeft="true"
+                      android:layout_alignParentStart="true">
+            <!--android:background="@drawable/image_bg"-->
+
+            <ImageView
+                android:id="@+id/list_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/shopicon"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

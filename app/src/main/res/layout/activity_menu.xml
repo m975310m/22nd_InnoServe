@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/background_floating_material_light"
+    tools:context="com.sea.icoco.MenuActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="21dp">
+
+        <ImageView
+            android:id="@+id/transferBalance_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onPayClick"
+            android:src="@drawable/scanning"
+            tools:layout_conversion_absoluteX="37dp"
+            tools:layout_conversion_absoluteY="37dp"
+            tools:layout_conversion_absoluteWidth="130dp"
+            tools:layout_conversion_absoluteHeight="130dp" />
+    </android.support.constraint.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="130dp"
+            android:layout_height="130dp" android:layout_alignLeft="@+id/relativeLayout"
+            android:layout_alignStart="@+id/relativeLayout" android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/gopoint_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onFriendClick" android:src="@drawable/runpoint"
+                android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignLeft="@+id/relativeLayout2"
+            android:layout_alignParentBottom="true" android:layout_alignStart="@+id/relativeLayout2"
+            android:layout_marginBottom="21dp">
+            <ImageView
+                android:id="@+id/showQRCode_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="BuildButonClick"
+                android:src="@drawable/exchange"
+                android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/relativeLayout" android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp">
+            <ImageView
+                android:id="@+id/aa_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onAAClick"
+                android:src="@drawable/documental"
+                android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="130dp" android:layout_height="130dp"
+            android:layout_alignEnd="@+id/relativeLayout3"
+            android:layout_alignRight="@+id/relativeLayout3" android:layout_alignTop="@+id/relativeLayout2">
+            <ImageView
+                android:id="@+id/transferBounsPoint_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:cropToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:onClick="onDepositClick"
+                android:src="@drawable/go" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignTop="@+id/relativeLayout5"
+            android:layout_alignLeft="@+id/relativeLayout4"
+            android:layout_alignStart="@+id/relativeLayout4">
+            <ImageView
+                android:id="@+id/serachMenu_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSearcherClick" android:src="@drawable/search2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <RelativeLayout
+                android:id="@+id/relativeLayout18"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp" android:layout_marginTop="7dp">
+                <ImageView
+                    android:id="@+id/redBall_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" android:src="@drawable/redball"/>
+                <TextView
+                    android:id="@+id/redBall_txv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="8" android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" android:textSize="25sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "292098287069",
+    "project_id": "icoco-147913"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292098287069:android:e44bbbc78ce3e831",
+        "android_client_info": {
+          "package_name": "com.sea.icoco"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOwAqOYMiyIrdO4YEG8hpGv7vSU7SWI_g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

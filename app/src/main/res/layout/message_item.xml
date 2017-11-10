@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dip">
+    <!--android:background="@drawable/list_selector"-->
+
+
+    <!--  ListView最左邊的縮略圖 -->
+    <LinearLayout android:id="@+id/thumbnail"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_marginRight="5dip"
+                  android:padding="3dip">
+        <!--android:background="@drawable/image_bg"-->
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+        />
+
+    </LinearLayout>
+
+    <!-- 歌曲名-->
+    <TextView
+        android:id="@+id/name_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名"
+        android:textColor="#040404" android:textSize="15dip"
+        android:textStyle="bold" android:typeface="sans"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"/>
+
+    <!-- 歌手名 -->
+
+    <!-- 歌曲播放時間 -->
+    <TextView
+        android:id="@+id/TranDate_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/list_name"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:text="時間"
+        android:textColor="#10bcc9"
+        android:textSize="10dip"
+        android:textStyle="bold"/>
+
+    <!-- 進入播放 -->
+
+    <TextView
+        android:id="@+id/address_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="向你請求：" android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/name_txv"
+        android:layout_alignStart="@+id/name_txv"/>
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/name_txv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/news"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/news_img"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/money_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="金額"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/address_txv"
+        android:layout_toEndOf="@+id/address_txv"/>
+
+</RelativeLayout>

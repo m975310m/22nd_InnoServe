@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dip">
+    <!--android:background="@drawable/list_selector"-->
+
+    <TextView
+        android:id="@+id/arrow_up_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:clickable="true"
+        android:text="▲"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/point_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="10"
+        android:gravity="center"
+        android:layout_below="@+id/arrow_up_txv"
+        android:layout_marginLeft="90dp"
+        />
+
+    <TextView
+        android:id="@+id/arrow_down_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/point_edt"
+        android:layout_marginLeft="100dp"
+        android:clickable="true"
+        android:text="▼"
+        android:textSize="50sp" />
+
+
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="點 "
+        android:textSize="30sp"
+        android:layout_above="@+id/arrow_down_txv"
+        android:layout_toRightOf="@+id/arrow_down_txv"
+        android:layout_toEndOf="@+id/arrow_down_txv"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp" />
+
+    <TextView
+        android:id="@+id/point_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/textView31"
+        android:layout_alignBottom="@+id/textView31"
+        android:layout_toRightOf="@+id/textView31"
+        android:layout_toEndOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 小時"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/point_txv"
+        android:layout_alignBottom="@+id/point_txv"
+        android:layout_toRightOf="@+id/point_txv"
+        android:layout_toEndOf="@+id/point_txv" />
+
+
+</RelativeLayout>

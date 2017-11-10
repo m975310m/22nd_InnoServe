@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">健康Go</string>
+    <!--FB API ID-->
+    <string name="facebook_app_id">1802946313285544</string>
+    <string name="title_activity_maps">Go 地圖</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAIr4QYI_IlSRks-G-ID0nf8VfurPyXzn4</string>
+    <string name="title_activity_diary_maps">>Go 地圖</string>
+</resources>
